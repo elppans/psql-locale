@@ -1,10 +1,11 @@
 #!/bin/bash
 
-if grep '55/* *	* * *	root  /usr/local/bin/psql-locale.sh' /etc/crontab ; then
+if ! grep '55/* *	* * *	root  /usr/local/bin/psql-locale.sh' /etc/crontab ; then
 sudo tee -a /etc/crontab &>>/dev/null <<'EOF'
 
 # Verifcar locale pt_BR ISO-8859-1 no sistema a cada NN Minutos
 55/* *	* * *	root  /usr/local/bin/psql-locale.sh' /etc/crontab
+#
 
 EOF
 fi
