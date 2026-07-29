@@ -21,8 +21,9 @@ Script simples para garantir que a localidade pt_BR ISO-8859-1 esteja habilitada
    sudo chmod +x /usr/local/bin/psql-locale.sh
    ```
 2. Rode manualmente uma vez (ou deixe o cron rodar, se configurado):
+>Rode como usuŕio normal. Se necessário será pedido a senha do sudo
    ```
-   sudo /usr/local/bin/psql-locale.sh
+   /usr/local/bin/psql-locale.sh
    ```
 
 ## Cron / Agendamento
