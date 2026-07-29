@@ -1,6 +1,8 @@
 # psql-locale
 
-Script simples para garantir que a localidade pt_BR ISO-8859-1 esteja habilitada no sistema e reiniciar o serviço do PostgreSQL caso seja necessário. Útil em servidores Debian/Ubuntu onde o banco (PostgreSQL) precisa da localidade para operar com encodings legacy.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Script simples para garantir que a localidade pt_BR ISO-8859-1 esteja habilitada no sistema e reiniciar o serviço do PostgreSQL caso seja necessário. Útil em servidores Debian/Ubuntu onde o banc[...]
 
 ## O que faz
 - Descomenta a entrada `pt_BR ISO-8859-1` em `/etc/locale.gen` e (se presente) em `/etc/locale.alias`.
@@ -27,7 +29,7 @@ Script simples para garantir que a localidade pt_BR ISO-8859-1 esteja habilitada
    ```
 
 ## Cron / Agendamento
-O script tenta adicionar uma linha em `/etc/crontab` para executar periodicamente. Recomenda-se revisar e, se necessário, corrigir a linha de crontab para uma sintaxe válida. Exemplo recomendado para rodar a cada 55 minutos:
+O script tenta adicionar uma linha em `/etc/crontab` para executar periodicamente. Recomenda-se revisar e, se necessário, corrigir a linha de crontab para uma sintaxe válida. Exemplo recomendado[...]
 ```
 # Executa o script a cada 55 minutos
 */55 * * * * root /usr/local/bin/psql-locale.sh
@@ -60,7 +62,7 @@ Verifique `/etc/crontab` após a primeira execução para garantir que a entrada
   - Verifique `/etc/crontab` e o syslog (/var/log/syslog) por mensagens do cron.
 
 ## Contribuições
-Correções, melhorias e sugestões são bem-vindas — abra uma issue ou envie um pull request. Se você planeja alterar o script para suportar outras distribuições ou versões do PostgreSQL, por favor documente as mudanças.
+Correções, melhorias e sugestões são bem-vindas — abra uma issue ou envie um pull request. Se você planeja alterar o script para suportar outras distribuições ou versões do PostgreSQL, p[...]
 
 ## Licença
 Nenhuma licença especificada no momento. Se quiser que eu adicione uma (por exemplo MIT), avise.
