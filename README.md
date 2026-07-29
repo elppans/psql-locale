@@ -65,4 +65,4 @@ Verifique `/etc/crontab` após a primeira execução para garantir que a entrada
 Correções, melhorias e sugestões são bem-vindas — abra uma issue ou envie um pull request. Se você planeja alterar o script para suportar outras distribuições ou versões do PostgreSQL, p[...]
 
 ## Licença
-Nenhuma licença especificada no momento. Se quiser que eu adicione uma (por exemplo MIT), avise.
+Este projeto está licenciado sob a Licença MIT — veja o arquivo [LICENSE](LICENSE) para os termos completos.
